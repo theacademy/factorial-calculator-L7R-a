@@ -35,9 +35,30 @@ public class Factorial {
 
 		//YOUR CODE STARTS HERE
 
-		return -1;
+		 this.printStream.print("Please enter a number between 1 and 10: ");
 
-		//YOUR CODE ENDS HERE
+		 // Get user input and if it is not an int in range, throw an error.
+		 try {
+
+			 num = scanner.nextInt();
+
+			 // If number is not in range
+			 if (num < 1 || num > 10) {
+				 throw new Exception();
+			 }
+		 }
+		 catch (Exception e) {
+
+			 // This message shows up because input isn't an int or it was out of range
+			 this.printStream.print("Invalid entry. Please enter an integer between 1 and 10, inclusive.");
+			 return -1;
+
+		 }
+
+		 // This number is an integer between the range
+		 return num;
+
+		 //YOUR CODE ENDS HERE
 		 
 			
 	 }
@@ -54,7 +75,10 @@ public class Factorial {
 		int result = 1;
 		//YOUR CODE STARTS HERE
 
- 
+		 // Multiply all numbers from 1 to num and store them in result
+		 for(int i = 1; i <= num; i++){
+			result*= i;
+		 }
 
 		//YOUR CODE ENDS HERE
 		this.printStream.print("The Factorial is: " + result);		
