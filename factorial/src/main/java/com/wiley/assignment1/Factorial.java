@@ -42,14 +42,14 @@ public class Factorial {
 
 			 num = scanner.nextInt();
 
-			 // If number is not in range
+			 // If number is not in range.
 			 if (num < 1 || num > 10) {
 				 throw new Exception();
 			 }
 		 }
 		 catch (Exception e) {
 
-			 // This message shows up because input isn't an int or it was out of range
+			 // This message shows up because input isn't an int or it was out of range.
 			 this.printStream.print("Invalid entry. Please enter an integer between 1 and 10, inclusive.");
 			 return -1;
 
@@ -75,7 +75,7 @@ public class Factorial {
 		int result = 1;
 		//YOUR CODE STARTS HERE
 
-		 // Multiply all numbers from 1 to num and store them in result
+		 // Multiply all numbers from 1 to num and store them in result.
 		 for(int i = 1; i <= num; i++){
 			result*= i;
 		 }
