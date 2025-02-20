@@ -35,8 +35,6 @@ public class Factorial {
 
 		//YOUR CODE STARTS HERE
 
-		 this.printStream.print("Please enter a number between 1 and 10: ");
-
 		 // Get user input and if it is not an int in range, throw an error.
 		 try {
 
