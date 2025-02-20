@@ -35,7 +35,7 @@ public class Factorial {
 
 		//YOUR CODE STARTS HERE
 
-		 // Get user input and if it is not an int in range, throw an error.
+		 //Get user input and if it is not an int in range, throw an error.
 		 try {
 
 			 num = scanner.nextInt();
